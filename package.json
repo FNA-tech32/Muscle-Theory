@@ -1,0 +1,15 @@
+{
+  "name": "muscle-theory",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/app.css --minify",
+    "watch:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/app.css --watch",
+    "dev": "concurrently -k \"npm:watch:css\" \"serve . -l 3000\""
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "concurrently": "^9.2.1",
+    "serve": "^14.2.5",
+    "tailwindcss": "^4.1.17"
+  }
+}

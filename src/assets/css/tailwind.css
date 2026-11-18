@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@source "../../../public";
+
+@theme {
+  --color-brand: #f6214b;
+  --color-brand-soft: #fdd7df;
+  --color-surface: #f9f9ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main [id] {
+  scroll-margin-top: 7.5rem;
+}
+
+@media (width < 48rem) {
+  [data-nav-panel].is-open {
+    display: block;
+  }
+
+  [data-pages-menu].is-open {
+    display: flex;
+  }
+}
+
+.hero-home {
+  background-image: linear-gradient(rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.55)),
+    url("../images/header-bg.jpg.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.member-banner {
+  background-image: linear-gradient(rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.55)),
+    url("../images/callto-bg.jpg.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.offer-card {
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.offer-card:hover {
+  box-shadow: 0 12px 40px var(--color-brand-soft);
+  transform: translateY(-4px);
+}

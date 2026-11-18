@@ -32,14 +32,17 @@ The alternative phone and email are for follow-up when the main line is busy.
 
 ## Stack
 
-HTML, Bootstrap, Font Awesome, and custom CSS. Source styles are in `src/assets/sass` (`main.scss`, `generic.scss`, `elements.scss`). The pages load the compiled files in `src/assets/css`.
+HTML, Tailwind CSS, and Font Awesome. Tailwind source is `src/assets/css/tailwind.css`. The pages load the built stylesheet `src/assets/css/app.css`. Older Sass files remain in `src/assets/sass` and are not loaded by the pages.
 
 ## Run locally
 
-The pages live in `public/` and load assets from `src/`, so serve the project folder:
+The pages live in `public/` and load assets from `src/`. Tailwind has to be built before the layout will show:
 
 ```bash
-npx --yes serve .
+npm install
+npm run dev
 ```
 
-Open `http://localhost:3000/public/index.html`.
+Open `http://localhost:3000/public/index.html`. `serve.json` keeps that address from being rewritten, so the menu script and page links keep working.
+
+`npm run build:css` writes `src/assets/css/app.css` once without starting the server.

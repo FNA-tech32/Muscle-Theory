@@ -5,815 +5,532 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../src/assets/images/logo.png.webp" />
     <title>Muscle Theory</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="../src/assets/libraries/bootstrap/css/bootstrap.min.css"
-    />
-    <!-- FontAwesome CSS -->
-    <link
-      rel="stylesheet"
-      href="../src/assets/fonts/fontawesome/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../src/assets/fonts/fontawesome/css/fontawesome.min.css"
-    />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="../src/assets/css/main.css" />
+    <link rel="stylesheet" href="../src/assets/fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../src/assets/css/app.css" />
   </head>
-  <body>
-    <!-- Header -->
-    <header id="header" class="position-fixed bg-white w-100 top-0 pt-3">
-      <div class="top">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-lg-4">
-              <p>We believe we helps people for happier lives</p>
+  <body class="bg-white text-neutral-900 antialiased">
+    <header class="sticky top-0 z-50 border-b border-neutral-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-3">
+        <div class="grid grid-cols-1 items-center gap-3 lg:grid-cols-3">
+          <p class="hidden text-sm text-neutral-600 lg:block">
+            We believe we helps people for happier lives
+          </p>
+          <div class="relative flex flex-col items-center">
+            <button
+              type="button"
+              class="absolute right-0 top-1 inline-flex h-11 w-11 items-center justify-center border border-neutral-300 md:hidden"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="site-nav"
+              aria-label="Open menu"
+            >
+              <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+            <a href="./index.html" class="inline-flex flex-col items-center">
+              <img
+                class="h-14 w-auto"
+                src="../src/assets/images/logo.png.webp"
+                alt="Muscle Theory"
+              />
+              <span class="mt-1 text-sm font-bold">Muscle Theory</span>
+            </a>
+            <p class="mt-2 text-center text-sm lg:hidden">
+              <a class="font-medium text-neutral-900" href="tel:+918047203300">+91 80 4720 3300</a>
+              <span class="mx-1 text-neutral-400" aria-hidden="true">·</span>
+              <a class="text-neutral-500" href="tel:+918047203301">+91 80 4720 3301</a>
+            </p>
+          </div>
+          <div class="hidden items-center justify-end gap-3 lg:flex">
+            <div class="text-right text-sm">
+              <a class="block font-medium text-neutral-900" href="tel:+918047203300">+91 80 4720 3300</a>
+              <a class="block text-xs text-neutral-500" href="tel:+918047203301">Alt: +91 80 4720 3301</a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="img text-center">
-                <img
-                  class="img-fluid"
-                  src="../src/assets/images/logo.png.webp"
-                  alt="Muscle Theory"
-                />
-                <p class="fw-bold mb-0 mt-1">Muscle Theory</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="contact d-flex align-items-center justify-content-end column-gap-3"
-              >
-                <div class="text-end">
-                  <a
-                    class="text-decoration-none text-dark d-block"
-                    href="tel:+918047203300"
-                    >+91 80 4720 3300</a
-                  >
-                  <a
-                    class="text-decoration-none text-secondary d-block small"
-                    href="tel:+918047203301"
-                    >Alt: +91 80 4720 3301</a
-                  >
-                </div>
-                <a class="bg" href="tel:+918047203300"
-                  ><i class="fa-solid fa-phone p-4 text-white"></i
-                ></a>
-              </div>
-            </div>
+            <a
+              class="inline-flex h-12 w-12 items-center justify-center bg-brand text-white"
+              href="tel:+918047203300"
+              aria-label="Call Muscle Theory"
+            >
+              <i class="fa-solid fa-phone"></i>
+            </a>
           </div>
         </div>
       </div>
-      <hr />
-      <div class="bottom">
-        <ul
-          class="menu list-unstyled d-flex column-gap-3 justify-content-center"
-        >
+      <nav id="site-nav" data-nav-panel class="border-t border-neutral-200 max-md:hidden md:block">
+        <ul class="mx-auto flex max-w-6xl flex-col px-4 py-2 md:flex-row md:flex-wrap md:items-center md:justify-center md:gap-x-5 md:py-3">
           <li>
-            <a
-              class="fw-bold text-decoration-none text-danger"
-              href="./index.html"
-              >HOME</a
-            >
+            <a class="block py-2 text-sm font-bold tracking-wide text-brand hover:text-brand md:py-0" href="./index.html">HOME</a>
           </li>
           <li>
-            <a class="fw-bold text-decoration-none text-dark" href="#offer"
-              >WE OFFER</a
-            >
+            <a class="block py-2 text-sm font-bold tracking-wide text-neutral-900 transition hover:text-brand md:py-0" href="#offer">WE OFFER</a>
           </li>
           <li>
-            <a class="fw-bold text-decoration-none text-dark" href="#course"
-              >TOP COURSE</a
-            >
+            <a class="block py-2 text-sm font-bold tracking-wide text-neutral-900 transition hover:text-brand md:py-0" href="#course">TOP COURSE</a>
           </li>
           <li>
-            <a class="fw-bold text-decoration-none text-dark" href="#schedule"
-              >SCHEDULE</a
-            >
+            <a class="block py-2 text-sm font-bold tracking-wide text-neutral-900 transition hover:text-brand md:py-0" href="#schedule">SCHEDULE</a>
           </li>
           <li>
-            <a class="fw-bold text-decoration-none text-dark" href="#trainer"
-              >TRAINER</a
-            >
+            <a class="block py-2 text-sm font-bold tracking-wide text-neutral-900 transition hover:text-brand md:py-0" href="#trainer">TRAINER</a>
           </li>
           <li>
-            <a class="fw-bold text-decoration-none text-dark" href="#plan"
-              >PLAN</a
-            >
+            <a class="block py-2 text-sm font-bold tracking-wide text-neutral-900 transition hover:text-brand md:py-0" href="#plan">PLAN</a>
           </li>
-          <li class="dropdown position-relative">
-            <a class="fw-bold text-decoration-none text-dark" href="#"
-              >PAGES<i class="fa-solid fa-angle-down"></i
-            ></a>
+          <li class="group relative">
+            <button
+              type="button"
+              class="flex w-full items-center gap-1 py-2 text-left text-sm font-bold tracking-wide text-neutral-900 transition hover:text-brand md:py-0"
+              data-pages-toggle
+              aria-expanded="false"
+              aria-controls="pages-menu"
+            >
+              PAGES <i class="fa-solid fa-angle-down text-xs"></i>
+            </button>
             <ul
-              class="position-absolute list-unstyled bg-white p-2 shadow rounded-3 d-none"
+              id="pages-menu"
+              data-pages-menu
+              class="hidden flex-col gap-2 pb-2 pl-3 md:absolute md:left-1/2 md:top-full md:z-20 md:mt-2 md:min-w-40 md:-translate-x-1/2 md:rounded-xl md:bg-white md:p-3 md:shadow-lg md:group-hover:flex"
             >
               <li>
-                <a
-                  class="fw-bold text-decoration-none text-dark"
-                  href="./generic.html"
-                  >Generic</a
-                >
+                <a class="block text-sm font-bold text-neutral-900 hover:text-brand" href="./generic.html">Generic</a>
               </li>
               <li>
-                <a
-                  class="fw-bold text-decoration-none text-dark"
-                  href="./elements.html"
-                  >Elements</a
-                >
+                <a class="block text-sm font-bold text-neutral-900 hover:text-brand" href="./elements.html">Elements</a>
               </li>
             </ul>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
-    <!-- Main -->
-    <main id="main">
-      <!-- Home -->
-      <section id="home" class="position-relative z-1">
-        <div class="container">
-          <div class="content position-absolute text-center">
-            <h2 class="text-white fw-bold">Real Fitness Depends on Exercise</h2>
-            <h6 class="text-white">Shape your body well.</h6>
+
+    <main>
+      <section id="home" class="hero-home flex min-h-[70vh] items-center justify-center px-4 py-20 text-center text-white">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-bold sm:text-4xl md:text-5xl">Real Fitness Depends on Exercise</h2>
+          <p class="mt-3 text-base sm:text-lg">Shape your body well.</p>
+        </div>
+      </section>
+
+      <section id="offer" class="px-4 py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl text-center">
+          <h2 class="text-2xl font-bold transition-colors hover:text-brand sm:text-4xl">We care about what we offer</h2>
+          <p class="mt-2 text-neutral-500">Who are in extremely love with eco friendly system.</p>
+          <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="offer-card rounded-xl p-6">
+              <img class="mx-auto h-24 w-auto" src="../src/assets/images/o1.png.webp" alt="" />
+              <h3 class="my-3 text-lg font-bold">Regular Exercise</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+            </article>
+            <article class="offer-card rounded-xl p-6">
+              <img class="mx-auto h-24 w-auto" src="../src/assets/images/o2.png.webp" alt="" />
+              <h3 class="my-3 text-lg font-bold">Training on the go</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+            </article>
+            <article class="offer-card rounded-xl p-6 sm:col-span-2 lg:col-span-1">
+              <img class="mx-auto h-24 w-auto" src="../src/assets/images/o3.png.webp" alt="" />
+              <h3 class="my-3 text-lg font-bold">Body Building Packages</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+            </article>
           </div>
         </div>
       </section>
-      <!-- Offer -->
-      <section id="offer">
-        <div class="container text-center">
-          <h2 class="fw-bold">We care about what we offer</h2>
-          <h6 class="text-secondary">
-            Who are in extremely love with eco friendly system.
-          </h6>
-          <div class="row justify-content-center mt-5">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper rounded-3 p-4">
-                <img
-                  class="img-fluid"
-                  src="../src/assets/images/o1.png.webp"
-                  alt="offer"
-                />
-                <h5 class="fw-bold my-3">Regular Exercise</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper rounded-3 p-4">
-                <img
-                  class="img-fluid"
-                  src="../src/assets/images/o2.png.webp"
-                  alt="offer"
-                />
-                <h5 class="fw-bold my-3">Training on the go</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper rounded-3 p-4">
-                <img
-                  class="img-fluid"
-                  src="../src/assets/images/o3.png.webp"
-                  alt="offer"
-                />
-                <h5 class="fw-bold my-3">Body Building Packages</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Index -->
-      <section id="index">
-        <div class="container text-center">
-          <h2 class="text-white fw-bold">Calculate Your Body Masss Index</h2>
-          <h6 class="text-white">
-            Who are in extremely love with eco friendly system.
-          </h6>
-          <input
-            class="border border-white text-white p-2"
-            type="text"
-            placeholder="Your Height (Inches)"
-          />
-          <input
-            class="border border-white text-white p-2"
-            type="text"
-            placeholder="Your Wight (lbs)"
-          />
-          <input
-            class="border bg-white px-4 py-2"
-            type="button"
-            value="CALCULATE YOUR BM!"
-          />
-        </div>
-      </section>
-      <!-- Course -->
-      <section id="course" class="py-5">
-        <div class="container">
-          <h2 class="fw-bold text-center">
-            Top Courses That are open for Students
-          </h2>
-          <h6 class="text-secondary text-center">
-            Who are in extremely love with eco friendly system.
-          </h6>
-          <div class="row row-gap-4">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative overflow-hidden">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/c1.jpg.webp"
-                    alt="course"
-                  />
-                  <h6 class="position-absolute text-white px-4 py-2">
-                    Course Available
-                  </h6>
-                </div>
-                <div class="text d-flex justify-content-between mt-2">
-                  <h6 class="fw-bold">Running Classes</h6>
-                  <h6 class="fw-bold">$275</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative overflow-hidden">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/c2.jpg.webp"
-                    alt="course"
-                  />
-                  <h6 class="position-absolute text-white px-4 py-2">
-                    Course Available
-                  </h6>
-                </div>
-                <div class="text d-flex justify-content-between mt-2">
-                  <h6 class="fw-bold">Weight Lifting Classes</h6>
-                  <h6 class="fw-bold">$200</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative overflow-hidden">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/c3.jpg.webp"
-                    alt="course"
-                  />
-                  <h6 class="position-absolute text-white px-4 py-2">
-                    Course Available
-                  </h6>
-                </div>
-                <div class="text d-flex justify-content-between mt-2">
-                  <h6 class="fw-bold">Body Combat Classes</h6>
-                  <h6 class="fw-bold">$225</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative overflow-hidden">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/c4.jpg.webp"
-                    alt="course"
-                  />
-                  <h6 class="position-absolute text-white px-4 py-2">
-                    Course Available
-                  </h6>
-                </div>
-                <div class="text d-flex justify-content-between mt-2">
-                  <h6 class="fw-bold">Organic Yoga Classes</h6>
-                  <h6 class="fw-bold">$300</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative overflow-hidden">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/c5.jpg.webp"
-                    alt="course"
-                  />
-                  <h6 class="position-absolute text-white px-5 py-2">
-                    Course Available
-                  </h6>
-                </div>
-                <div class="text d-flex justify-content-between mt-2">
-                  <h6 class="fw-bold">Raw Fitness Classes</h6>
-                  <h6 class="fw-bold">$500</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative overflow-hidden">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/c6.jpg.webp"
-                    alt="course"
-                  />
-                  <h6 class="position-absolute text-white px-4 py-2">
-                    Course Available
-                  </h6>
-                </div>
-                <div class="text d-flex justify-content-between mt-2">
-                  <h6 class="fw-bold">Body Building Classes</h6>
-                  <h6 class="fw-bold">$250</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Revolutions -->
-      <section id="revolutions" class="bg-dark">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-lg-3 col-md-3 col-sm-6 p-0">
-              <div class="img overflow-hidden">
-                <img
-                  class="img-fluid w-100"
-                  src="../src/assets/images/f1.jpg.webp"
-                  alt="revolution"
-                />
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-              <h6 class="text-secondary">Basic & Common Repairs</h6>
-              <h4 class="fw-bold">Basic Revolutions</h4>
-              <p class="text-secondary">
-                Computer users and programmers have become so accustomed to
-                using Windows, even for the changing capabilities and the
-                appearances of the graphical.
-              </p>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 p-0">
-              <div class="img overflow-hidden">
-                <img
-                  class="img-fluid w-100"
-                  src="../src/assets/images/f2.jpg.webp"
-                  alt="revolution"
-                />
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-              <h6 class="text-secondary">Basic & Common Repairs</h6>
-              <h4 class="fw-bold">Basic Revolutions</h4>
-              <p class="text-secondary">
-                Computer users and programmers have become so accustomed to
-                using Windows, even for the changing capabilities and the
-                appearances of the graphical.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Schedule -->
-      <section id="schedule" class="py-5">
-        <div class="container text-center">
-          <h2 class="fw-bold">Schedule your Fitness Process</h2>
-          <h6 class="text-secondary">
-            Who are in extremely love with eco friendly system.
-          </h6>
-          <table class="border m-auto">
-            <thead class="border">
-              <tr>
-                <th class="border bg-danger-subtle p-2">COURSE NAME</th>
-                <th class="border bg-danger-subtle p-2">MON</th>
-                <th class="border bg-danger-subtle p-2">TUE</th>
-                <th class="border bg-danger-subtle p-2">WED</th>
-                <th class="border bg-danger-subtle p-2">THU</th>
-                <th class="border bg-danger-subtle p-2">FRI</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border">
-                <td class="border text-secondary p-3">Fitness Aero</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-              </tr>
-              <tr class="border">
-                <td class="border text-secondary p-3">Senior Fitness</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-              </tr>
-              <tr class="border">
-                <td class="border text-secondary p-3">Fitness Aero</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-              </tr>
-              <tr class="border">
-                <td class="border text-secondary p-3">Senior Fitness</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-              </tr>
-              <tr class="border">
-                <td class="border text-secondary p-3">Senior Fitness</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-              </tr>
-              <tr>
-                <td class="border text-secondary p-3">Senior Fitness</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-                <td class="border text-secondary p-3">10.00 02.00</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <!-- Trainer -->
-      <section id="trainer" class="py-5">
-        <div class="container text-center">
-          <h2 class="fw-bold">Our Experienced Trainers</h2>
-          <p class="text-secondary mb-5">
-            Who are in extremely love with eco friendly system.
-          </p>
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/t1.jpg.webp"
-                    alt="trainer"
-                  />
-                  <div
-                    class="icons position-absolute d-flex justify-content-center align-items-center column-gap-3"
-                  >
-                    <i class="fa-brands fa-facebook-f text-white"></i>
-                    <i class="fa-brands fa-twitter text-white"></i>
-                    <i class="fa-brands fa-linkedin-in text-white"></i>
-                  </div>
-                </div>
-                <div class="text mt-3">
-                  <h5 class="fw-bold">Ethel Davis</h5>
-                  <h6 class="text-secondary">Managing Director (Sales)</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/t2.jpg.webp"
-                    alt="trainer"
-                  />
-                  <div
-                    class="icons position-absolute d-flex justify-content-center align-items-center column-gap-3"
-                  >
-                    <i class="fa-brands fa-facebook-f text-white"></i>
-                    <i class="fa-brands fa-twitter text-white"></i>
-                    <i class="fa-brands fa-linkedin-in text-white"></i>
-                  </div>
-                </div>
-                <div class="text mt-3">
-                  <h5 class="fw-bold">Rodney Cooper</h5>
-                  <h6 class="text-secondary">
-                    Creative Art Director (Project)
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/t3.jpg.webp"
-                    alt="trainer"
-                  />
-                  <div
-                    class="icons position-absolute d-flex justify-content-center align-items-center column-gap-3"
-                  >
-                    <i class="fa-brands fa-facebook-f text-white"></i>
-                    <i class="fa-brands fa-twitter text-white"></i>
-                    <i class="fa-brands fa-linkedin-in text-white"></i>
-                  </div>
-                </div>
-                <div class="text mt-3">
-                  <h5 class="fw-bold">Dora Walker</h5>
-                  <h6 class="text-secondary">Senior Core Developer</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-              <div class="wrapper">
-                <div class="img position-relative">
-                  <img
-                    class="img-fluid w-100"
-                    src="../src/assets/images/t4.jpg.webp"
-                    alt="trainer"
-                  />
-                  <div
-                    class="icons position-absolute d-flex justify-content-center align-items-center column-gap-3"
-                  >
-                    <i class="fa-brands fa-facebook-f text-white"></i>
-                    <i class="fa-brands fa-twitter text-white"></i>
-                    <i class="fa-brands fa-linkedin-in text-white"></i>
-                  </div>
-                </div>
-                <div class="text mt-3">
-                  <h5 class="fw-bold">Lena Keller</h5>
-                  <h6 class="text-secondary">Creative Content Developer</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Plan -->
-      <section id="plan" class="py-5">
-        <div class="container">
-          <h2 class="fw-bold text-center">Choose the Perfect Plan for you</h2>
-          <p class="text-secondary mb-5 text-center">
-            Who are in extremely love with eco friendly system.
-          </p>
-          <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div
-                  class="top d-flex align-items-center p-4 justify-content-between"
-                >
-                  <div class="text">
-                    <h6 class="fw-bold">Standard</h6>
-                    <h6 class="text-secondary">For the individuals</h6>
-                  </div>
-                  <div class="price">
-                    <h2 class="fw-bold">£199</h2>
-                  </div>
-                </div>
-                <hr class="m-0" />
-                <p class="text-secondary p-4 m-0">Few would argue</p>
-                <hr class="m-0 text-white" />
-                <ul class="list-unstyled p-4">
-                  <li class="text-secondary mb-3">2.5 GB Free Photos</li>
-                  <li class="text-secondary mb-3">
-                    Secure Online Transfer Indeed
-                  </li>
-                  <li class="text-secondary mb-3">
-                    Unlimited Styles for interface
-                  </li>
-                  <li class="text-secondary mb-3">Reliable Customer Service</li>
-                  <li class="text-secondary mb-3">Manual Backup Provided</li>
-                  <li class="text-center">
-                    <a class="btn btn-dark" href="#"
-                      >PURCHASE PLAN <i class="fa-solid fa-arrow-right"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div
-                  class="top d-flex align-items-center p-4 justify-content-between"
-                >
-                  <div class="text">
-                    <h6 class="fw-bold">Business</h6>
-                    <h6 class="text-secondary">For the individuals</h6>
-                  </div>
-                  <div class="price">
-                    <h2 class="fw-bold">£399</h2>
-                  </div>
-                </div>
-                <hr class="m-0" />
-                <p class="text-secondary p-4 m-0">For the small Company</p>
-                <hr class="m-0 text-white" />
-                <ul class="list-unstyled p-4">
-                  <li class="text-secondary mb-3">2.5 GB Free Photos</li>
-                  <li class="text-secondary mb-3">
-                    Secure Online Transfer Indeed
-                  </li>
-                  <li class="text-secondary mb-3">
-                    Unlimited Styles for interface
-                  </li>
-                  <li class="text-secondary mb-3">Reliable Customer Service</li>
-                  <li class="text-secondary mb-3">Manual Backup Provided</li>
-                  <li class="text-center">
-                    <a class="btn btn-dark" href="#"
-                      >PURCHASE PLAN <i class="fa-solid fa-arrow-right"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="wrapper">
-                <div
-                  class="top d-flex align-items-center p-4 justify-content-between"
-                >
-                  <div class="text">
-                    <h6 class="fw-bold">Ultimate</h6>
-                    <h6 class="text-secondary">For the individuals</h6>
-                  </div>
-                  <div class="price">
-                    <h2 class="fw-bold">£499</h2>
-                  </div>
-                </div>
-                <hr class="m-0" />
-                <p class="text-secondary p-4 m-0">For the small Company</p>
-                <hr class="m-0 text-white" />
-                <ul class="list-unstyled p-4">
-                  <li class="text-secondary mb-3">2.5 GB Free Photos</li>
-                  <li class="text-secondary mb-3">
-                    Secure Online Transfer Indeed
-                  </li>
-                  <li class="text-secondary mb-3">
-                    Unlimited Styles for interface
-                  </li>
-                  <li class="text-secondary mb-3">Reliable Customer Service</li>
-                  <li class="text-secondary mb-3">Manual Backup Provided</li>
-                  <li class="text-center">
-                    <a class="btn btn-dark" href="#"
-                      >PURCHASE PLAN <i class="fa-solid fa-arrow-right"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Logos -->
-      <section id="logos" class="py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-2 col-md-2 col-sm-3 col-3">
-              <img
-                class="img-fluid w-100"
-                src="../src/assets/images/l1.png.webp"
-                alt="logo"
-              />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 col-3">
-              <img
-                class="img-fluid w-100"
-                src="../src/assets/images/l2.png.webp"
-                alt="logo"
-              />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 col-3">
-              <img
-                class="img-fluid w-100"
-                src="../src/assets/images/l3.png.webp"
-                alt="logo"
-              />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 col-3">
-              <img
-                class="img-fluid w-100"
-                src="../src/assets/images/l4.png.webp"
-                alt="logo"
-              />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 col-3">
-              <img
-                class="img-fluid w-100"
-                src="../src/assets/images/l5.png.webp"
-                alt="logo"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Member -->
-      <div id="member" class="py-5 position-relative z-1">
-        <div class="container text-center">
-          <div class="content position-absolute">
-            <h2 class="fw-bold text-white">Huge Transaction in last Week</h2>
-            <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.
-            </p>
-            <a class="btn btn-danger" href="#">BECOME A MEMBER</a>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- Footer -->
-    <footer id="footer" class="py-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h5 class="fw-bold">About us</h5>
-            <p class="text-secondary">
-              Muscle Theory is a fitness studio for classes, training plans,
-              and everyday exercise.
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h5 class="fw-bold">Contact Us</h5>
-            <p class="text-secondary mb-2">
-              6 Lift Court, Whitefield, Bengaluru 560066
-            </p>
-            <p class="mb-1">
-              <a class="text-decoration-none text-dark fw-bold" href="tel:+918047203300"
-                >+91 80 4720 3300</a
-              >
-            </p>
-            <p class="mb-1 text-secondary">Alternative phone</p>
-            <p class="mb-2">
-              <a class="text-decoration-none text-dark fw-bold" href="tel:+918047203301"
-                >+91 80 4720 3301</a
-              >
-            </p>
-            <p class="mb-1">
-              <a
-                class="text-decoration-none text-dark"
-                href="mailto:hello@muscletheory.fit"
-                >hello@muscletheory.fit</a
-              >
-            </p>
-            <p class="mb-1 text-secondary">Alternative email</p>
-            <p class="mb-0">
-              <a
-                class="text-decoration-none text-dark"
-                href="mailto:support@muscletheory.fit"
-                >support@muscletheory.fit</a
-              >
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h5 class="fw-bold">Newsletter</h5>
-            <p class="text-secondary">
-              You can trust us. we only send offers, not a single spam.
-            </p>
+
+      <section id="index" class="bg-brand px-4 py-16 text-center text-white sm:py-24">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="text-2xl font-bold sm:text-4xl">Calculate Your Body Masss Index</h2>
+          <p class="mt-2">Who are in extremely love with eco friendly system.</p>
+          <form class="mx-auto mt-8 flex max-w-4xl flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap">
             <input
-              class="form-control bg-dark-subtle position-relative w-100"
+              class="border border-white bg-transparent px-4 py-2 text-white placeholder:text-white/80 sm:w-56"
               type="text"
-              placeholder="Email address"
+              placeholder="Your Height (Inches)"
             />
+            <input
+              class="border border-white bg-transparent px-4 py-2 text-white placeholder:text-white/80 sm:w-56"
+              type="text"
+              placeholder="Your Wight (lbs)"
+            />
+            <input
+              class="cursor-pointer rounded-full bg-white px-6 py-2 font-semibold text-neutral-900 transition hover:bg-transparent hover:text-white"
+              type="button"
+              value="CALCULATE YOUR BM!"
+            />
+          </form>
+        </div>
+      </section>
+
+      <section id="course" class="px-4 py-16">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="text-center text-2xl font-bold sm:text-4xl">Top Courses That are open for Students</h2>
+          <p class="mt-2 text-center text-neutral-500">Who are in extremely love with eco friendly system.</p>
+          <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[4/3] w-full object-cover blur-sm transition duration-500 group-hover:scale-110 group-hover:blur-none" src="../src/assets/images/c1.jpg.webp" alt="Running Classes" />
+                <p class="absolute bottom-3 left-3 bg-brand px-4 py-2 text-sm text-white">Course Available</p>
+              </div>
+              <div class="mt-3 flex items-start justify-between gap-3">
+                <h3 class="font-bold">Running Classes</h3>
+                <p class="font-bold text-brand">$275</p>
+              </div>
+            </article>
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[4/3] w-full object-cover blur-sm transition duration-500 group-hover:scale-110 group-hover:blur-none" src="../src/assets/images/c2.jpg.webp" alt="Weight Lifting Classes" />
+                <p class="absolute bottom-3 left-3 bg-brand px-4 py-2 text-sm text-white">Course Available</p>
+              </div>
+              <div class="mt-3 flex items-start justify-between gap-3">
+                <h3 class="font-bold">Weight Lifting Classes</h3>
+                <p class="font-bold text-brand">$200</p>
+              </div>
+            </article>
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[4/3] w-full object-cover blur-sm transition duration-500 group-hover:scale-110 group-hover:blur-none" src="../src/assets/images/c3.jpg.webp" alt="Body Combat Classes" />
+                <p class="absolute bottom-3 left-3 bg-brand px-4 py-2 text-sm text-white">Course Available</p>
+              </div>
+              <div class="mt-3 flex items-start justify-between gap-3">
+                <h3 class="font-bold">Body Combat Classes</h3>
+                <p class="font-bold text-brand">$225</p>
+              </div>
+            </article>
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[4/3] w-full object-cover blur-sm transition duration-500 group-hover:scale-110 group-hover:blur-none" src="../src/assets/images/c4.jpg.webp" alt="Organic Yoga Classes" />
+                <p class="absolute bottom-3 left-3 bg-brand px-4 py-2 text-sm text-white">Course Available</p>
+              </div>
+              <div class="mt-3 flex items-start justify-between gap-3">
+                <h3 class="font-bold">Organic Yoga Classes</h3>
+                <p class="font-bold text-brand">$300</p>
+              </div>
+            </article>
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[4/3] w-full object-cover blur-sm transition duration-500 group-hover:scale-110 group-hover:blur-none" src="../src/assets/images/c5.jpg.webp" alt="Raw Fitness Classes" />
+                <p class="absolute bottom-3 left-3 bg-brand px-4 py-2 text-sm text-white">Course Available</p>
+              </div>
+              <div class="mt-3 flex items-start justify-between gap-3">
+                <h3 class="font-bold">Raw Fitness Classes</h3>
+                <p class="font-bold text-brand">$500</p>
+              </div>
+            </article>
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[4/3] w-full object-cover blur-sm transition duration-500 group-hover:scale-110 group-hover:blur-none" src="../src/assets/images/c6.jpg.webp" alt="Body Building Classes" />
+                <p class="absolute bottom-3 left-3 bg-brand px-4 py-2 text-sm text-white">Course Available</p>
+              </div>
+              <div class="mt-3 flex items-start justify-between gap-3">
+                <h3 class="font-bold">Body Building Classes</h3>
+                <p class="font-bold text-brand">$250</p>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="row justify-content-between mt-3">
-          <div class="col-lg-6 col-md-8 col-sm-6">
-            <p>
-              Copyright ©2026 All rights reserved |
-              <a class="text-decoration-none text-danger" href="./index.html"
-                >Muscle Theory</a
-              >
+      </section>
+
+      <section id="revolutions" class="bg-neutral-950 text-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="overflow-hidden sm:col-span-2 lg:col-span-1">
+            <img class="h-64 w-full object-cover transition duration-500 hover:scale-105 lg:h-full" src="../src/assets/images/f1.jpg.webp" alt="" />
+          </div>
+          <div class="flex flex-col justify-center p-6 sm:p-8">
+            <p class="text-sm text-neutral-400">Basic &amp; Common Repairs</p>
+            <h3 class="mt-2 text-xl font-bold text-brand">Basic Revolutions</h3>
+            <p class="mt-3 text-sm leading-relaxed text-neutral-400">
+              Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical.
             </p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <ul class="list-unstyled d-flex column-gap-2 justify-content-end">
-              <li>
-                <a href="#"
-                  ><i class="fa-brands fa-facebook-f text-white bg-dark p-3"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa-brands fa-twitter text-white bg-dark p-3"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i
-                    class="fa-solid fa-bowling-ball text-white bg-dark p-3"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa-brands fa-behance text-white bg-dark p-3"></i
-                ></a>
-              </li>
-            </ul>
+          <div class="overflow-hidden sm:col-span-2 lg:col-span-1">
+            <img class="h-64 w-full object-cover transition duration-500 hover:scale-105 lg:h-full" src="../src/assets/images/f2.jpg.webp" alt="" />
           </div>
+          <div class="flex flex-col justify-center p-6 sm:p-8">
+            <p class="text-sm text-neutral-400">Basic &amp; Common Repairs</p>
+            <h3 class="mt-2 text-xl font-bold text-brand">Basic Revolutions</h3>
+            <p class="mt-3 text-sm leading-relaxed text-neutral-400">
+              Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="px-4 py-16">
+        <div class="mx-auto max-w-6xl text-center">
+          <h2 class="text-2xl font-bold sm:text-4xl">Schedule your Fitness Process</h2>
+          <p class="mt-2 text-neutral-500">Who are in extremely love with eco friendly system.</p>
+          <div class="mt-8 overflow-x-auto">
+            <table class="mx-auto min-w-[40rem] border-collapse text-sm">
+              <thead>
+                <tr class="bg-brand-soft">
+                  <th class="border border-neutral-200 px-3 py-3">COURSE NAME</th>
+                  <th class="border border-neutral-200 px-3 py-3">MON</th>
+                  <th class="border border-neutral-200 px-3 py-3">TUE</th>
+                  <th class="border border-neutral-200 px-3 py-3">WED</th>
+                  <th class="border border-neutral-200 px-3 py-3">THU</th>
+                  <th class="border border-neutral-200 px-3 py-3">FRI</th>
+                </tr>
+              </thead>
+              <tbody class="text-neutral-500">
+                <tr class="transition hover:bg-brand hover:text-white">
+                  <td class="border border-neutral-200 px-3 py-4">Fitness Aero</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                </tr>
+                <tr class="transition hover:bg-brand hover:text-white">
+                  <td class="border border-neutral-200 px-3 py-4">Senior Fitness</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                </tr>
+                <tr class="transition hover:bg-brand hover:text-white">
+                  <td class="border border-neutral-200 px-3 py-4">Fitness Aero</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                </tr>
+                <tr class="transition hover:bg-brand hover:text-white">
+                  <td class="border border-neutral-200 px-3 py-4">Senior Fitness</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                </tr>
+                <tr class="transition hover:bg-brand hover:text-white">
+                  <td class="border border-neutral-200 px-3 py-4">Senior Fitness</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                </tr>
+                <tr class="transition hover:bg-brand hover:text-white">
+                  <td class="border border-neutral-200 px-3 py-4">Senior Fitness</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                  <td class="border border-neutral-200 px-3 py-4">10.00 02.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="trainer" class="bg-surface px-4 py-16">
+        <div class="mx-auto max-w-6xl text-center">
+          <h2 class="text-2xl font-bold sm:text-4xl">Our Experienced Trainers</h2>
+          <p class="mt-2 text-neutral-500">Who are in extremely love with eco friendly system.</p>
+          <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:rounded-3xl" src="../src/assets/images/t1.jpg.webp" alt="Ethel Davis" />
+                <div class="absolute inset-0 flex items-center justify-center gap-4 bg-brand/70 text-white opacity-0 transition duration-500 group-hover:rounded-3xl group-hover:opacity-100">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+              <h3 class="mt-4 font-bold">Ethel Davis</h3>
+              <p class="text-sm text-neutral-500">Managing Director (Sales)</p>
+            </article>
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:rounded-3xl" src="../src/assets/images/t2.jpg.webp" alt="Rodney Cooper" />
+                <div class="absolute inset-0 flex items-center justify-center gap-4 bg-brand/70 text-white opacity-0 transition duration-500 group-hover:rounded-3xl group-hover:opacity-100">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+              <h3 class="mt-4 font-bold">Rodney Cooper</h3>
+              <p class="text-sm text-neutral-500">Creative Art Director (Project)</p>
+            </article>
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:rounded-3xl" src="../src/assets/images/t3.jpg.webp" alt="Dora Walker" />
+                <div class="absolute inset-0 flex items-center justify-center gap-4 bg-brand/70 text-white opacity-0 transition duration-500 group-hover:rounded-3xl group-hover:opacity-100">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+              <h3 class="mt-4 font-bold">Dora Walker</h3>
+              <p class="text-sm text-neutral-500">Senior Core Developer</p>
+            </article>
+            <article class="group">
+              <div class="relative overflow-hidden">
+                <img class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:rounded-3xl" src="../src/assets/images/t4.jpg.webp" alt="Lena Keller" />
+                <div class="absolute inset-0 flex items-center justify-center gap-4 bg-brand/70 text-white opacity-0 transition duration-500 group-hover:rounded-3xl group-hover:opacity-100">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+              <h3 class="mt-4 font-bold">Lena Keller</h3>
+              <p class="text-sm text-neutral-500">Creative Content Developer</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="plan" class="px-4 py-16">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="text-center text-2xl font-bold sm:text-4xl">Choose the Perfect Plan for you</h2>
+          <p class="mt-2 text-center text-neutral-500">Who are in extremely love with eco friendly system.</p>
+          <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="group flex h-full flex-col overflow-hidden rounded-t-3xl bg-surface sm:col-span-2 lg:col-span-1">
+              <div class="flex items-center justify-between gap-3 p-6">
+                <div>
+                  <h3 class="font-bold">Standard</h3>
+                  <p class="text-sm text-neutral-500">For the individuals</p>
+                </div>
+                <p class="text-3xl font-bold">£199</p>
+              </div>
+              <div class="flex flex-1 flex-col border-t border-white p-6 text-neutral-500 transition group-hover:bg-brand group-hover:text-white">
+                <p>Few would argue</p>
+                <ul class="mt-4 flex-1 space-y-3 text-sm">
+                  <li>2.5 GB Free Photos</li>
+                  <li>Secure Online Transfer Indeed</li>
+                  <li>Unlimited Styles for interface</li>
+                  <li>Reliable Customer Service</li>
+                  <li>Manual Backup Provided</li>
+                </ul>
+                <a class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-900 px-4 py-2 text-sm font-semibold text-white" href="#">
+                  PURCHASE PLAN <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+            <article class="group flex h-full flex-col overflow-hidden rounded-t-3xl bg-surface">
+              <div class="flex items-center justify-between gap-3 p-6">
+                <div>
+                  <h3 class="font-bold">Business</h3>
+                  <p class="text-sm text-neutral-500">For the individuals</p>
+                </div>
+                <p class="text-3xl font-bold">£399</p>
+              </div>
+              <div class="flex flex-1 flex-col border-t border-white p-6 text-neutral-500 transition group-hover:bg-brand group-hover:text-white">
+                <p>For the small Company</p>
+                <ul class="mt-4 flex-1 space-y-3 text-sm">
+                  <li>2.5 GB Free Photos</li>
+                  <li>Secure Online Transfer Indeed</li>
+                  <li>Unlimited Styles for interface</li>
+                  <li>Reliable Customer Service</li>
+                  <li>Manual Backup Provided</li>
+                </ul>
+                <a class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-900 px-4 py-2 text-sm font-semibold text-white" href="#">
+                  PURCHASE PLAN <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+            <article class="group flex h-full flex-col overflow-hidden rounded-t-3xl bg-surface">
+              <div class="flex items-center justify-between gap-3 p-6">
+                <div>
+                  <h3 class="font-bold">Ultimate</h3>
+                  <p class="text-sm text-neutral-500">For the individuals</p>
+                </div>
+                <p class="text-3xl font-bold">£499</p>
+              </div>
+              <div class="flex flex-1 flex-col border-t border-white p-6 text-neutral-500 transition group-hover:bg-brand group-hover:text-white">
+                <p>For the small Company</p>
+                <ul class="mt-4 flex-1 space-y-3 text-sm">
+                  <li>2.5 GB Free Photos</li>
+                  <li>Secure Online Transfer Indeed</li>
+                  <li>Unlimited Styles for interface</li>
+                  <li>Reliable Customer Service</li>
+                  <li>Manual Backup Provided</li>
+                </ul>
+                <a class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-900 px-4 py-2 text-sm font-semibold text-white" href="#">
+                  PURCHASE PLAN <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="logos" class="px-4 py-16">
+        <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-8">
+          <img class="h-16 w-auto max-w-28 object-contain grayscale transition duration-500 hover:grayscale-0" src="../src/assets/images/l1.png.webp" alt="" />
+          <img class="h-16 w-auto max-w-28 object-contain grayscale transition duration-500 hover:grayscale-0" src="../src/assets/images/l2.png.webp" alt="" />
+          <img class="h-16 w-auto max-w-28 object-contain grayscale transition duration-500 hover:grayscale-0" src="../src/assets/images/l3.png.webp" alt="" />
+          <img class="h-16 w-auto max-w-28 object-contain grayscale transition duration-500 hover:grayscale-0" src="../src/assets/images/l4.png.webp" alt="" />
+          <img class="h-16 w-auto max-w-28 object-contain grayscale transition duration-500 hover:grayscale-0" src="../src/assets/images/l5.png.webp" alt="" />
+        </div>
+      </section>
+
+      <section id="member" class="member-banner flex min-h-80 items-center px-4 py-16">
+        <div class="mx-auto max-w-3xl text-center text-white">
+          <h2 class="text-2xl font-bold sm:text-4xl">Huge Transaction in last Week</h2>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          </p>
+          <a class="mt-6 inline-block rounded-full bg-brand px-6 py-3 text-sm font-bold text-white" href="#">BECOME A MEMBER</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="px-4 py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+          <div>
+            <h2 class="text-lg font-bold">About us</h2>
+            <p class="mt-3 text-neutral-500">
+              Muscle Theory is a fitness studio for classes, training plans, and everyday exercise.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold">Contact Us</h2>
+            <p class="mt-3 text-neutral-500">6 Lift Court, Whitefield, Bengaluru 560066</p>
+            <p class="mt-2">
+              <a class="font-bold text-neutral-900" href="tel:+918047203300">+91 80 4720 3300</a>
+            </p>
+            <p class="mt-2 text-sm text-neutral-500">Alternative phone</p>
+            <p>
+              <a class="font-bold text-neutral-900" href="tel:+918047203301">+91 80 4720 3301</a>
+            </p>
+            <p class="mt-2">
+              <a class="text-neutral-900" href="mailto:hello@muscletheory.fit">hello@muscletheory.fit</a>
+            </p>
+            <p class="mt-2 text-sm text-neutral-500">Alternative email</p>
+            <p>
+              <a class="text-neutral-900" href="mailto:support@muscletheory.fit">support@muscletheory.fit</a>
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold">Newsletter</h2>
+            <p class="mt-3 text-neutral-500">You can trust us. we only send offers, not a single spam.</p>
+            <input class="mt-3 w-full bg-neutral-200 px-3 py-2" type="email" placeholder="Email address" />
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col items-center gap-4 border-t border-neutral-200 pt-6 md:flex-row md:justify-between">
+          <p class="text-center md:text-left">
+            Copyright ©2026 All rights reserved |
+            <a class="text-brand" href="./index.html">Muscle Theory</a>
+          </p>
+          <ul class="flex flex-wrap justify-center gap-2">
+            <li>
+              <a class="inline-flex h-11 w-11 items-center justify-center bg-neutral-900 text-white transition hover:bg-brand" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a class="inline-flex h-11 w-11 items-center justify-center bg-neutral-900 text-white transition hover:bg-brand" href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="inline-flex h-11 w-11 items-center justify-center bg-neutral-900 text-white transition hover:bg-brand" href="#" aria-label="Sports"><i class="fa-solid fa-bowling-ball"></i></a>
+            </li>
+            <li>
+              <a class="inline-flex h-11 w-11 items-center justify-center bg-neutral-900 text-white transition hover:bg-brand" href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+    <script src="./js/nav.js"></script>
   </body>
 </html>
